@@ -284,6 +284,19 @@ ul {
 .gallery{
 
 }
+.gallery.h2 {
+  margin-bottom: 25px;
+}
+.gallery-text {
+  width: 439px;
+  margin-bottom: 30px;
+  color: var(--black-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.6;
+}
 .gallery-list .book-now{
   width: 105px;
   height: 41px;
@@ -299,6 +312,21 @@ ul {
   height: 337px;
   position: relative;
   border-radius: 10px;
+}
+.gallery-list>li:nth-child(2){
+  background-image: url(./img/gallery1.jpg);
+}
+.gallery-list>li:nth-child(3){
+  background-image: url(./img/gallery2.jpg);
+}
+.gallery-list>li:nth-child(4){
+  background-image: url(./img/gallery3.jpg);
+}
+.gallery-list>li:nth-child(5){
+  background-image: url(./img/gallery4.jpg);
+}
+.gallery-list>li:nth-child(6){
+  background-image: url(./img/gallery5.jpg);
 }
 .galery-list__info-block {
   position: absolute;
