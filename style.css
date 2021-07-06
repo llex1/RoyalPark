@@ -8,7 +8,7 @@
 *,
 *::after,
 *::before {
-  outline: 1px dotted #a5ae9d;
+  /* outline: 1px dotted #a5ae9d; */
 }
 /* #FCFAF9 */
 body {
@@ -280,6 +280,7 @@ ul {
   left: 0;
   width: 630px;
   height: 320px;
+  border-radius: .5em;
 }
 .video-presentation__text-block{
   width: 458px;
