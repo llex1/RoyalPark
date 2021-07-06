@@ -8,7 +8,7 @@
 *,
 *::after,
 *::before {
-  /* outline: 1px dotted #a5ae9d; */
+  outline: 1px dotted #a5ae9d;
 }
 /* #FCFAF9 */
 body {
@@ -263,14 +263,23 @@ ul {
   opacity: 0.8;
 }
 /* =================== video presentation =================== */
-.video-presentaiton{
-
+.video-presentation{
 }
 .container.video-presentation {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 220px;
   display: flex;
   justify-content: flex-end;
+}
+.video-presentation .h2 {
+  margin-bottom: 31px;
+}
+.video-presentation .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 630px;
+  height: 320px;
 }
 .video-presentation__text-block{
   width: 458px;
@@ -417,7 +426,6 @@ ul {
 }
 /* =================== What our client say =================== */
 .feedback {
-
 }
 .feedback__show-more {
   display: flex;
@@ -533,6 +541,7 @@ ul {
 /* =================== Footer =================== */
 .footer {
   background-color: var(--footer-color);
+  padding-bottom: 145px;
 }
 .footer .container {
   padding-top: 16px;
