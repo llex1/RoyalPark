@@ -44,6 +44,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+/* =================== hidden =================== */
+.hidden{
+  display: inline-block;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+
+}
 /* =================== container =================== */
 .container {
   margin: 0 auto;
@@ -55,6 +67,7 @@ ul {
   display: block;
   width: 186px;
   height: 144px;
+  margin-left: -23px;
   background-image: url(./img/logo.png);
   background-size: 144px 144px;
   background-repeat: no-repeat;
@@ -96,6 +109,7 @@ ul {
   font-weight: 500;
   line-height: 1.4;
 }
+/* =================== subscribe-form  =================== */
 .subscribe-form {
   display: flex;
 }
@@ -157,9 +171,11 @@ ul {
 }
 /* =================== Hero =================== */
 .hero {
+
 }
 .hero .container {
   padding-top: 78px;
+  margin-bottom: 140px;
 }
 .hero-title {
   color: var(--accent-color);
@@ -247,7 +263,18 @@ ul {
   opacity: 0.8;
 }
 /* =================== video presentation =================== */
+.video-presentaiton{
 
+}
+.container.video-presentation {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+.video-presentation__text-block{
+  width: 458px;
+}
 /* =================== Why you choose us! =================== */
 .why-us {
   margin-bottom: 140px;
@@ -511,8 +538,113 @@ ul {
   padding-top: 16px;
   display: flex;
 }
+.footer .logo {
+  margin-bottom: -20px;
+}
 .footer ul {
   list-style: none;
+}
+/* .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+.footer-content:not(:first-child){
+  margin-top: 54px;
+} 
+
+.footer-content {
+  position: relative;
+}
+.footer-content:first-child{
+  width: 257px;
+  margin-right: 77px;
+}
+.footer-content.list{
+  margin-right: 76px;
+}
+
+.footer-content .text {
+  color: var(--black-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-bottom: 30px;
+  margin-top: -39px;
+}
+.footer-content .mail {
+  color: var(--black-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+  margin-bottom: 15px;
+  
+}
+.footer-content .social-icons{
+  display: flex;
+}
+.footer-content .social-icons>li>a {
+  display: inline-block;
+}
+.footer-content .social-icons>li:not(:last-child) {
+  margin-right: 25px;
+}
+.footer-content .social-icons .facebook {
+  width: 20px;
+  height: 20px;
+  border-radius: 0.2em;
+  background-image: url('./img/icons.png');
+}
+.footer-content .social-icons .instagram {
+  width: 20px;
+  height: 20px;
+  border-radius: 0.2em;
+  background-image: url('./img/icons.png');
+  background-position: -45px 0px;
+}
+.footer-content .social-icons .twitter {
+  width: 20px;
+  height: 20px;
+  border-radius: 0.2em;
+  background-image: url('./img/icons.png');
+  background-position: -90px 0px;
+}
+.footer-content .social-icons .google {
+  width: 20px;
+  height: 20px;
+  border-radius: 0.2em;
+  background-image: url('./img/icons.png');
+  background-position: -135px 0px;
+}
+
+
+.footer-content .footer-content__title {
+  color: var(--black-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.footer-content.list>li:not(:first-child){
+  color: var(--black-color);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+.footer-content .subscribe-form {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 491px;
 }
 
 /* =================== ******* =================== */
