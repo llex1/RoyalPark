@@ -8,7 +8,7 @@
 *,
 *::after,
 *::before {
-  /* outline: 1px dotted #a5ae9d; */
+  outline: 1px dotted #a5ae9d;
 }
 /* #FCFAF9 */
 body {
@@ -279,8 +279,19 @@ ul {
   top: 0;
   left: 0;
   width: 630px;
-  height: 320px;
+  height: 325px;
   border-radius: .5em;
+}
+.video-presentation .video::before{
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
 }
 .video-presentation__text-block{
   width: 458px;
