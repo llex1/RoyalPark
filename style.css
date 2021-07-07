@@ -264,34 +264,27 @@ ul {
 }
 /* =================== video presentation =================== */
 .video-presentation{
-}
-.container.video-presentation {
-  position: relative;
   margin-bottom: 220px;
+}
+.video-presentation .container{
+  position: relative;
   display: flex;
   justify-content: flex-end;
 }
 .video-presentation .h2 {
   margin-bottom: 31px;
 }
-.video-presentation .video {
-  position: absolute;
-  top: 0;
-  left: 0;
+.video-presentation__video-block{
   width: 630px;
   height: 325px;
-  border-radius: .5em;
-}
-.video-presentation .video::before{
-  content: "";
-  display: inline-block;
-  width: 100px;
-  height: 100px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: white;
+  top: 0;
+  left: -103px;
+}
+.video-presentation__video-block .video {
+  width: 100%;
+  height: 100%;
+  border-radius: .5em;
 }
 .video-presentation__text-block{
   width: 458px;
