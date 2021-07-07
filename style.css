@@ -8,7 +8,7 @@
 *,
 *::after,
 *::before {
-  outline: 1px dotted #a5ae9d;
+  /* outline: 1px dotted #a5ae9d; */
 }
 /* #FCFAF9 */
 body {
@@ -171,11 +171,11 @@ ul {
 }
 /* =================== Hero =================== */
 .hero {
-
+  margin-bottom: 140px;
 }
 .hero .container {
+  position: relative;
   padding-top: 78px;
-  margin-bottom: 140px;
 }
 .hero-title {
   color: var(--accent-color);
@@ -216,10 +216,10 @@ ul {
   margin-bottom: 48px;
 }
 .find-room {
-  /* position: absolute; */
+  position: relative;
+  left: -33px;
   list-style: none;
   width: 687px;
-  height: 110px;
   padding: 24px 49px;
   display: flex;
   align-items: center;
@@ -264,7 +264,32 @@ ul {
 }
 /* =================== video presentation =================== */
 .video-presentation{
+  padding-top: 80px;
   margin-bottom: 220px;
+  position: relative;
+}
+.video-presentation::before{
+  content: "";
+  display: inline-block;
+  width: 484px;
+  height: 268px;
+  background-image: url(./img/video-bbg.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-469px);
+}
+.video-presentation::after {
+  content: "";
+  display: inline-block;
+  width: 228px;
+  height: 228px;
+  background-image: url(./img/video-sbg.png);
+  position: absolute;
+  bottom: -160px;
+  left: 50%;
+  transform: translateX(-758px);
+  z-index: -1;
 }
 .video-presentation .container{
   position: relative;
@@ -275,11 +300,37 @@ ul {
   margin-bottom: 31px;
 }
 .video-presentation__video-block{
-  width: 630px;
-  height: 325px;
   position: absolute;
   top: 0;
   left: -103px;
+  width: 630px;
+  height: 325px;
+}
+.video__play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.video__play-icon::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10px, -50%);
+  border-left: 30px solid var(--accent-color);
+  border-top: 18px solid #fff;
+  border-right: 30px solid #fff;
+  border-bottom: 18px solid #fff;
+  background-color: var(--accent-color);
+
 }
 .video-presentation__video-block .video {
   width: 100%;
