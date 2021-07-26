@@ -8,7 +8,7 @@
 *,
 *::after,
 *::before {
-  /* outline: 1px dotted #a5ae9d; */
+  outline: 1px dotted #a5ae9d;
 }
 /* #FCFAF9 */
 body {
@@ -93,8 +93,8 @@ ul {
   color: #ffffff;
   background-color: var(--btn-color);
 
-  font-family: 'Poppins', sans-serif;
-  /* font-family: "Gelasio", serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Gelasio", serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -134,7 +134,9 @@ ul {
   opacity: 0.5;
 }
 .subscribe-form input[type='submit'] {
+  width: 164px;
   margin-left: -3px;
+  font-family: 'Poppins', sans-serif;
 }
 /* ============================================================ */
 /* =================== Header =================== */
@@ -212,7 +214,8 @@ ul {
   line-height: 1.6;
   opacity: 0.6;
 }
-.button.hero {
+.hero .button {
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 48px;
 }
 .find-room {
@@ -298,6 +301,10 @@ ul {
 }
 .video-presentation .h2 {
   margin-bottom: 31px;
+}
+.video-presentation .button {
+  font-family: 'Roboto', sans-serif;
+  /* margin-bottom: 48px; */
 }
 .video-presentation__video-block{
   position: absolute;
@@ -417,6 +424,9 @@ ul {
   line-height: 1.6;
   opacity: 0.6;
 }
+.gallery-list .view-more{
+  font-family: 'Roboto', sans-serif;
+}
 .gallery-list .book-now {
   width: 105px;
   height: 41px;
@@ -488,6 +498,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 60px;
+}
+.feedback .button{
+  font-family: 'Roboto', sans-serif;
 }
 .feedback-list {
   list-style: none;
