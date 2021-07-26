@@ -8,7 +8,7 @@
 *,
 *::after,
 *::before {
-  outline: 1px dotted #a5ae9d;
+  /* outline: 1px dotted #a5ae9d; */
 }
 /* #FCFAF9 */
 body {
@@ -179,6 +179,12 @@ ul {
   position: relative;
   padding-top: 78px;
 }
+.hero .button {
+  font-family: 'Roboto', sans-serif;
+}
+.hero>.container>.button{
+  margin-bottom: 48px;
+}
 .hero-title {
   color: var(--accent-color);
   margin-bottom: 15px;
@@ -213,10 +219,6 @@ ul {
   font-weight: 400;
   line-height: 1.6;
   opacity: 0.6;
-}
-.hero .button {
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 48px;
 }
 .find-room {
   position: relative;
